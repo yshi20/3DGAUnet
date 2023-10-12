@@ -11,9 +11,6 @@
 
 
 ### Pipeline
-
-Basically I already put the `chair` dataset and a trained model as an example in `volumetric_data` and `outputs` folders. You can directly go to the training or evaluation part. But I still give a complete pipeline here.
-
 #### Data
 
 Volumetric data in .mat format should be placed in'/src/volumetric_data/', and change the directory in 'paramt.py' accordingly.
