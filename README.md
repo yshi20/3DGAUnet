@@ -17,12 +17,11 @@ Volumetric data in .mat format should be placed in'/src/volumetric_data/', and c
 
 #### Training
 `cd src`
-run `python main.py` on GPU or CPU. Of course, you need a GPU for training until getting good results. I used one GeForce RTX 4090 in my experiments on 3D models with resolution of 64x64x64
-
-model weights and some 3D reconstruction images would be logged to the `outputs` folders, respectively, for every `model_save_step` number of step in `paramt.py`. You can play with all parameters in `paramt.py`.
+run `python main.py` on GPU or CPU. Of course, you need a GPU for training until you get good results. I used one GeForce RTX 4090 in my experiments on 3D models with a resolution of 64x64x64.
+*Model weights and some 3D reconstruction images would be logged to the `outputs` folders, respectively, for every `model_save_step` number of step in `paramt.py`. You can play with all parameters in `paramt.py`.
 
 #### Generation of synthesis data
-To generate volumetric data from trained model, you can run `python main.py --test=True` to call `tester.py`.
+To generate volumetric data from the trained model, you can run `python main.py --test=True` to call `tester.py`.
 
-#### Pretrained Model
+#### Pre-trained Model
 Pretrained models are in the `outputs` folder. Then run `python main.py --test=True --model_name=pancreas_pretrained`. You will find the outputs in the `test_outputs` folder within `pancreas_pretrained`.
